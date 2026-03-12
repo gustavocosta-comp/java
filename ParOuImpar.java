@@ -1,18 +1,19 @@
-Import java.Util.Scanner
-Public class ParOuImpar {
-  Public Static Void Main(Strings[]args) {
-    Scanner sc = New Scanner(system.in);
+import java.util.Scanner;
 
-    Int numero;
+public class ParOuImpar {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
 
-    System.Out.Print("Digite o numero: ");
-    numero = sc.scnextInt();
+    int numero;
+
+    System.out.print("Digite o numero: ");
+    numero = sc.nextInt();
 
     if(numero % 2 == 0) {
-      System.Out.Print("O numero é par ");
+      System.out.println("O numero é par");
     }
-    else{
-      System.Out.Print("O numero é impar");
+    else {
+      System.out.println("O numero é impar");
     }
     sc.close();
   }
