@@ -1,52 +1,55 @@
-import java.Util.Scanner;
-public class Calculadora{
-  public static void main(Strings[]args) {
-  Scanner sc = new Scanner(System.in);
+import java.util.Scanner;
 
-    Float num1, num2, result;
-    char operacao;
+public class Calculadora {
+    public static void main(String[] args) {
 
-    System.Out.Print("Digite o 1 número: ");
-    num1 = sc.nextfloat();
+        Scanner sc = new Scanner(System.in);
 
-    System.Out.Print("Digite o 2 número: ");
-    num2 = sc.nextfloat();
+        float num1, num2, result;
+        char operacao;
 
-    System.Out.Print("Digite a operacao: ");
-    operacao = sc.next().charArt(0);
+        System.out.print("Digite o 1 numero: ");
+        num1 = sc.nextFloat();
 
-    Switch(operacao) {
-      case'+': {
-        result = num1 + num2;
-      System.Out.Print("Resultado :" +reseult);
-      break;
-     }
-     case'-': {
-        result = num1 - num2;
-      System.Out.Print("Resultado :" +reseult);
-      break;
-     }
-     case'*': {
-        result = num1 * num2;
-      System.Out.Print("Resultado :" +reseult);
-      break;
-     }
-     case'/':{
-        result = num1 / num2;
-      System.Out.Print("Resultado :" +reseult);
-      break;
-     }
-      else{
-        System.Out.Print("erro : divisao por zero!");
-      }
-      break;
-      default;
-         System.Out.Print("Operador invalido!");
-      }
-    sc.close();
-  }
+        System.out.print("Digite o 2 numero: ");
+        num2 = sc.nextFloat();
+
+        System.out.print("Digite a operacao (+ - * /): ");
+        operacao = sc.next().charAt(0);
+
+        switch (operacao) {
+
+            case '+':
+                result = num1 + num2;
+                System.out.print("Resultado: " + result);
+                break;
+
+            case '-':
+                result = num1 - num2;
+                System.out.print("Resultado: " + result);
+                break;
+
+            case '*':
+                result = num1 * num2;
+                System.out.print("Resultado: " + result);
+                break;
+
+            case '/':
+                if (num2 == 0) {
+                    System.out.print("Erro: divisao por zero!");
+                } else {
+                    result = num1 / num2;
+                    System.out.print("Resultado: " + result);
+                }
+                break;
+
+            default:
+                System.out.print("Operador invalido!");
+        }
+
+        sc.close();
+    }
 }
-  
         
 
 
