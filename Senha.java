@@ -1,24 +1,23 @@
-import java.util.scanner;
+import java.util.Scanner;
+
 public class Senha {
-  public static void main(strings[]args ){
-
-  scanner sc = new scanner(system.in);
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
     
-    string senha;
-    string senhaCorreta ="1234";
+    String senha;
+    String senhaCorreta = "1234";
 
-  system.out.print("digite a senha:");
-  string senhaDigitada = sc.nextLine();
+    System.out.print("digite a senha: ");
+    String senhaDigitada = sc.nextLine();
 
     boolean acessoPermitido = senhaDigitada.equals(senhaCorreta);
 
-    if (acesso permitido) {
-      system.out.print("acesso permitido");
-    }else{
-      system.out.print("acesso negado");
+    if (acessoPermitido) {
+      System.out.print("acesso permitido");
+    } else {
+      System.out.print("acesso negado");
     }
 
     sc.close();
   }
 }
-    
